@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-gg0yR0iXCbMQv3Xipma34MD+dh/1fQ784/j6cY/iJTQUOhvWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <title>Weather App Project</title>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="backdropFilter">
+      <div class="containter">
+        <form id="search-form">
+          <input id="city-input" type="text" placeholder="Search weather" />
+          <input type="submit" value="Search" />
+        </form>
+        <div class="card">
+          <div class="card-body">
+            <br />
+            <h1 id="city">North Miami Beach</h1>
+            <h2>Saturday 20:00</h2>
+            <p>Partly cloudy</p>
+            <img
+              src="images/cloud1.png"
+              alt="cloud image"
+              class="simple-cloud"
+            />
+            <h3>85°F</h3>
+            <h4>5 Day Forecast:</h4>
+          </div>
+          <ul>
+            Precipitation: 30%
+            <br />
+            Wind: 9 mph
+          </ul>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            Sunday
+          </div>
+          <div class="col-6">
+            Monday
+          </div>
+          <div class="col-6">
+            Tuesday
+          </div>
+          <div class="col-6">
+            Wednesday
+          </div>
+          <div class="col-6">
+            Thursday
+          </div>
+          <div class="col-6">
+            Friday
+          </div>
+        </div>
+      </div>
+      <div class="row forecastRow">
+        <div class="col-6">
+          <img
+            src="images/raincloud1.png"
+            alt="cloud image"
+            class="simple-cloud"
+          />
+          91°
+        </div>
+        <div class="col-6">
+          <img src="images/cloud1.png" alt="cloud image" class="simple-cloud" />
+          81°
+        </div>
+        <div class="col-6">
+          <img
+            src="images/sunbehindcloud.png"
+            alt="cloud image"
+            class="simple-cloud"
+          />
+          91°
+        </div>
+        <div class="col-6">
+          <img
+            src="images/raincloud1.png"
+            alt="cloud image"
+            class="simple-cloud"
+          />
+          90°
+        </div>
+        <div class="col-6">
+          <img
+            src="images/sunbehindcloud.png"
+            alt="cloud image"
+            class="simple-cloud"
+          />
+          90°
+        </div>
+        <div class="col-6">
+          <img src="images/cloud1.png" alt="cloud image" class="simple-cloud" />
+          90°
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+    <footer>
+      <a
+        href="http://github.com/biancanoelle/PlusFinalProject/blob/main/.codesandbox/workspace.json"
+        >GitHub - Bianca Prieto</a
+      >
+    </footer>
+  </body>
+</html>

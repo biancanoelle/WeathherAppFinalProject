@@ -1,0 +1,88 @@
+body {
+  padding-left: 250px;
+  padding-right: 250px;
+  padding-top: 20px;
+  font-family: "Nexa", sans-serif;
+  font-size: 20px;
+  background-image: url("https://images.unsplash.com/photo-1501418672972-ae99af3de760?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80");
+  background-color: #cccccc;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.backdropFilter {
+  backdrop-filter: blur(15px);
+}
+background-image {
+  max-width: 100%;
+  object-fit: cover;
+}
+.forecastRow {
+  min-height: 100px;
+}
+form {
+  padding-top: 20px;
+  padding-left: 500px;
+}
+h1 {
+  font-weight: 300;
+  font-size: 30px;
+  color: black;
+}
+
+p {
+  color: black;
+}
+h2 {
+  font-weight: 500;
+  font-size: large;
+  color: black;
+}
+.simple-cloud {
+  height: 50px;
+}
+h3 {
+  display: inline-block;
+  font-weight: lighter;
+  font-size: 20px;
+}
+h4 {
+  font-size: 18px;
+  font-weight: lighter;
+}
+ul {
+  padding-left: 800px;
+  margin-top: -50px;
+  font-size: medium;
+  font-weight: lighter;
+  color: black;
+}
+p {
+  padding-bottom: 20px;
+  font-weight: 450;
+  font-size: large;
+}
+.col-6 {
+  float: left;
+  width: 15%;
+  padding-top: -100px;
+  font-size: medium;
+}
+img {
+  block-size: small;
+  padding-top: 20px;
+}
+
+.col-6:hover {
+  background-color: #ebebeb;
+  cursor: pointer;
+}
+
+a {
+  font-family: "Nexa", sans-serif;
+  color: black;
+  font-size: 13px;
+  display: block;
+  padding-top: 50px;
+}
