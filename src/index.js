@@ -65,6 +65,6 @@ function displayForecast(response) {
   let lon = position.coords.longitude;
   let units = "imperial";
   let url =
-    "api.openweathermap.org/data/2.5/forecast/daily?lat={lat}&lon={lon}&cnt={cnt}&appid={apiKey}";
+    "https://api.openweathermap.org/data/2.5/forecast/daily?lat=${lat}&lon=${lon}&cnt={cnt}&appid={apiKey}&units=${units}";
   forecastElement.innerHTML = "Forecast";
 }
