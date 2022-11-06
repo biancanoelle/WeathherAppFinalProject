@@ -41,6 +41,10 @@ function showWeather(response) {
   let temperature = Math.round(response.data.main.temp);
   console.log(response);
   h3.innerHTML = `${temperature}°F  ${response.data.name}`;
+  let humidityElement = document.querySelector("#humidity");
+  humidityElement.innerHTML = response.data.main.humidity;
+  let windElement = document.querySelector("#wind");
+  windElement.innerHTML = Math.round(response.data.wind.speed);
 }
 
 function retrievePosition(position) {
