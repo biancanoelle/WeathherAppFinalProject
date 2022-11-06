@@ -58,6 +58,7 @@ function retrievePosition(position) {
 
 navigator.geolocation.getCurrentPosition(retrievePosition);
 
+
 function displayForecast(forecast) {
   let forecastElement = document.querySelector("#forecast");
   let apiKey = "3499ef150985eccadd080ff408a018df";
@@ -65,7 +66,8 @@ function displayForecast(forecast) {
   let lon = position.coords.longitude;
   let units = "imperial";
   let url =
-    "https://api.openweathermap.org/data/2.5/forecast/daily?lat=${lat}&lon=${lon}&cnt={cnt}&appid={apiKey}&units=${units}";
+    'https://api.openweathermap.org/data/2.5/forecast/daily?lat=${lat}&lon=${lon}&cnt={cnt}&appid={apiKey}&units=${units};
   forecastElement.innerHTML = "Forecast";
   axios.get(url).then(displayForecast);
 }
+
