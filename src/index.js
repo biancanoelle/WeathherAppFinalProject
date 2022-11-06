@@ -58,7 +58,7 @@ function retrievePosition(position) {
 
 navigator.geolocation.getCurrentPosition(retrievePosition);
 
-function displayForecast(forecast) {
+function displayForecast(response) {
   let forecastElement = document.querySelector("#forecast");
   let apiKey = "3499ef150985eccadd080ff408a018df";
   let lat = position.coords.latitude;
