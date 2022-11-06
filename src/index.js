@@ -61,9 +61,8 @@ navigator.geolocation.getCurrentPosition(retrievePosition);
 
 
 function displayForecast(response) {
-  let forecastRow = document.querySelector("row forecastRow");
+  let col-6 = document.querySelector("col-6");
   let temperature = Math.round(response.data.main.temp);
-  console.log(response);
   weather-forecast.innerHTML = `${temperature}°F  ${response.data.name}`
   let forecastElement = document.querySelector("#forecast");
   let apiKey = "3499ef150985eccadd080ff408a018df";
