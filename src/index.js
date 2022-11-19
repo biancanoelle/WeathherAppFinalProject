@@ -45,6 +45,7 @@ function showWeather(response) {
   humidityElement.innerHTML = response.data.main.humidity;
   let windElement = document.querySelector("#wind");
   windElement.innerHTML = Math.round(response.data.wind.speed);
+  getForecast(response.data.coord);
 }
 
 function retrievePosition(position) {
@@ -58,16 +59,15 @@ function retrievePosition(position) {
 
 navigator.geolocation.getCurrentPosition(retrievePosition);
 
-
-function displayForecast(forecast) {
-  let forecastElement = document.querySelector("#forecast");
-  let apiKey = "3499ef150985eccadd080ff408a018df";
-  let lat = position.coords.latitude;
-  let lon = position.coords.longitude;
-  let units = "imperial";
-  let url =
-    'https://api.openweathermap.org/data/2.5/forecast/daily?lat=${lat}&lon=${lon}&cnt={cnt}&appid={apiKey}&units=${units};
-  forecastElement.innerHTML = "Forecast";
-  axios.get(url).then(displayForecast);
+function displayForecast(response) {
+  console.log(response);
 }
 
+function getForecast(coords) {
+  let apiKey = "3499ef150985eccadd080ff408a018df";
+  let lat = coords.lat;
+  let lon = coords.lon;
+  let units = "imperial";
+  let url = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&appid=${apiKey}&units=${units}`;
+  axios.get(url).then(displayForecast);
+}
